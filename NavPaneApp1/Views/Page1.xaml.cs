@@ -36,7 +36,7 @@ namespace NavPaneApp1.Views
                 Latitude = 49.201537,
                 Longitude = -0.392917
             });
-            companyMap.ZoomLevel = 18;
+            companyMap.ZoomLevel = 20;
             //Position of all shops
             MapIcon shop1 = new MapIcon();
             shop1.Location = CAEN_LOCATION;
