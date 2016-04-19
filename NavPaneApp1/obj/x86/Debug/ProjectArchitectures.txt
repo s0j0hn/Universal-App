@@ -1,0 +1,1 @@
+c:\users\jan\documents\visual studio 2015\Projects\NavPaneApp1\NavPaneApp1\NavPaneApp1.csproj;x86
