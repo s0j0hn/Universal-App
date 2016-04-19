@@ -10,6 +10,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
 		EntranceNavigationTransitionInfo.IsTargetElement="True">
-        <Maps:MapControl x:Name="companyMap" HorizontalAlignment="Left" Margin="55,53,0,0" VerticalAlignment="Top" Height="992" Width="1810"/>
+        <Maps:MapControl x:ConnectionId='1' x:Name="companyMap" HorizontalAlignment="Left" Margin="55,53,0,0" VerticalAlignment="Top" Height="992" Width="1810"/>
     </Grid>
 </Page>
+
