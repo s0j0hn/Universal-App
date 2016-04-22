@@ -1,4 +1,5 @@
 ﻿using System;
+using Windows.UI.ApplicationSettings;
 using Windows.UI.Xaml.Controls;
 
 namespace SupStore.Views
@@ -8,9 +9,11 @@ namespace SupStore.Views
     /// </summary>
     public sealed partial class SettingsPage : Page
     {
+        
         public SettingsPage()
         {
             this.InitializeComponent();
         }
+
     }
 }

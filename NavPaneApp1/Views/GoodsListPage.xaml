@@ -6,11 +6,31 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-          EntranceNavigationTransitionInfo.IsTargetElement="True">
-        <RelativePanel Margin="10">
-            <ListView x:Name="listView" HorizontalAlignment="Left" Height="1060" VerticalAlignment="Top" Width="1900"/>
-        </RelativePanel>
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ListView x:Name="listgoods" Height="1060" Width="1900" 
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Grid.Row="1"
+                Background="{StaticResource ApplicationPageBackgroundThemeBrush}" 
+                
+                ShowsScrollingPlaceholders="False" 
+                BorderBrush="LightGray" BorderThickness="1" SelectionMode="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding id}"></TextBlock>
+                        <TextBlock Text="{Binding name}"></TextBlock>
+                        <TextBlock Text="{Binding description}"></TextBlock>
+                        <TextBlock Text="{Binding quantity}"></TextBlock>
+                        <TextBlock Text="{Binding location}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
+
 </Page>

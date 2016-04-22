@@ -1,0 +1,23 @@
+﻿<Goods>
+  <dataModule>
+    <id>1</id>
+    <name>Tomates</name>
+    <description>Produit local</description>
+    <quantity>32</quantity>
+    <location>Caen</location>
+  </dataModule>
+  <dataModule>
+    <id>2</id>
+    <name>Lait Entier</name>
+    <description>Lait entier super pas gras</description>
+    <quantity>100</quantity>
+    <location>Caen</location>
+  </dataModule>
+  <dataModule>
+    <id>3</id>
+    <name>Red Bull</name>
+    <description>Boisson energisente </description>
+    <quantity>65</quantity>
+    <location>Havre</location>
+  </dataModule>
+  </Goods>
