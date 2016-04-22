@@ -10,10 +10,12 @@ using Windows.UI.Xaml.Automation;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
-using NavPaneApp1.Controls;
-using NavPaneApp1.Views;
+using SupStore.Views;
+using SupStore.Controls;
+using CompanyAdsPage = SupStore.Views.CompanyAdsPage;
+using MapPage = SupStore.Views.MapPage;
 
-namespace NavPaneApp1
+namespace SupStore
 {
     /// <summary>
     /// The "chrome" layer of the app that provides top-level navigation with
@@ -27,21 +29,21 @@ namespace NavPaneApp1
             {
                 new NavMenuItem()
                 {
-                    Symbol = Symbol.Contact,
+                    Symbol = Symbol.Map,
                     Label = "MAP",
-                    DestinationPage = typeof(Views.Page1)
+                    DestinationPage = typeof(MapPage)
                 },
                 new NavMenuItem()
                 {
-                    Symbol = Symbol.Edit,
-                    Label = "Page2",
-                    DestinationPage = typeof(Views.Page2)
+                    Symbol = Symbol.List,
+                    Label = "Goods List",
+                    DestinationPage = typeof(GoodsListPage)
                 },
                 new NavMenuItem()
                 {
-                    Symbol = Symbol.Favorite,
-                    Label = "Page3",
-                    DestinationPage = typeof(Views.Page3)
+                    Symbol = Symbol.Video,
+                    Label = "Company Ads",
+                    DestinationPage = typeof(CompanyAdsPage)
                 },
             });
 

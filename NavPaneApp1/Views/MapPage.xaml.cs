@@ -3,15 +3,15 @@ using Windows.Devices.Geolocation;
 using Windows.Foundation;
 using Windows.Storage.Streams;
 using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls.Maps;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Maps;
 
-namespace NavPaneApp1.Views
+namespace SupStore.Views
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Page1 : Page
+    public sealed partial class MapPage : Page
     {
         RandomAccessStreamReference mapIconStreamReference;
         Geopoint CAEN_LOCATION = new Geopoint(new BasicGeoposition() { Latitude = 49.201537, Longitude = -0.392917 });
@@ -21,7 +21,7 @@ namespace NavPaneApp1.Views
         private String ROUEN_TITLE = "Rouen Shop";
         private String HAVRE_TITLE = "Havre Shop";
 
-        public Page1()
+        public MapPage()
         {
             this.InitializeComponent();
             companyMap.Loaded += CompanyMap_Loaded;
@@ -36,7 +36,7 @@ namespace NavPaneApp1.Views
                 Latitude = 49.201537,
                 Longitude = -0.392917
             });
-            companyMap.ZoomLevel = 20;
+            companyMap.ZoomLevel = 9;
             //Position of all shops
             MapIcon shop1 = new MapIcon();
             shop1.Location = CAEN_LOCATION;

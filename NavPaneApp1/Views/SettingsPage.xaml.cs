@@ -1,7 +1,7 @@
 ﻿using System;
 using Windows.UI.Xaml.Controls;
 
-namespace NavPaneApp1.Views
+namespace SupStore.Views
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.

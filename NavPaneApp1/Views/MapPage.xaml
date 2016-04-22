@@ -1,12 +1,18 @@
 ﻿<Page
-    x:Class="SupStore.Views.SettingsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:SupStore.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="SupStore.Views.MapPage"
     mc:Ignorable="d">
 
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-          EntranceNavigationTransitionInfo.IsTargetElement="True"/>
+		EntranceNavigationTransitionInfo.IsTargetElement="True">
+        <RelativePanel Margin="10">
+            <Maps:MapControl x:Name="companyMap" HorizontalAlignment="Left" VerticalAlignment="Top" Height="1060" Width="1900"/>
+        </RelativePanel>
+    </Grid>
 </Page>

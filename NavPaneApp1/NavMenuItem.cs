@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
 
-namespace NavPaneApp1
+namespace SupStore
 {
     /// <summary>
     /// Data to represent an item in the nav menu.

@@ -1,1 +1,1 @@
-C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\NavPaneApp1.csproj;x64
+C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\SupStore.csproj;x64

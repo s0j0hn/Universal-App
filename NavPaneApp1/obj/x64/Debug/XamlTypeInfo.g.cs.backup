@@ -9,11 +9,11 @@
 
 
 
-namespace SupStore
+namespace NavPaneApp1
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-    private global::SupStore.SupStore_XamlTypeInfo.XamlTypeInfoProvider _provider;
+    private global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         /// <summary>
         /// GetXamlType(Type)
@@ -22,7 +22,7 @@ namespace SupStore
         {
             if(_provider == null)
             {
-                _provider = new global::SupStore.SupStore_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -34,7 +34,7 @@ namespace SupStore
         {
             if(_provider == null)
             {
-                _provider = new global::SupStore.SupStore_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -49,7 +49,7 @@ namespace SupStore
     }
 }
 
-namespace SupStore.SupStore_XamlTypeInfo
+namespace NavPaneApp1.NavPaneApp1_XamlTypeInfo
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -133,36 +133,36 @@ namespace SupStore.SupStore_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[14];
-            _typeNameTable[0] = "SupStore.Controls.NavMenuListView";
+            _typeNameTable[0] = "NavPaneApp1.Controls.NavMenuListView";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.ListView";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[3] = "SupStore.AppShell";
+            _typeNameTable[3] = "NavPaneApp1.AppShell";
             _typeNameTable[4] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[5] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[6] = "Windows.UI.Xaml.Controls.Frame";
             _typeNameTable[7] = "Windows.Foundation.Rect";
-            _typeNameTable[8] = "SupStore.Controls.PageHeader";
+            _typeNameTable[8] = "NavPaneApp1.Controls.PageHeader";
             _typeNameTable[9] = "Windows.UI.Xaml.UIElement";
-            _typeNameTable[10] = "SupStore.Views.MapPage";
-            _typeNameTable[11] = "SupStore.Views.GoodsListPage";
-            _typeNameTable[12] = "SupStore.Views.CompanyAdsPage";
-            _typeNameTable[13] = "SupStore.Views.SettingsPage";
+            _typeNameTable[10] = "NavPaneApp1.Views.MapPage";
+            _typeNameTable[11] = "NavPaneApp1.Views.GoodsListPage";
+            _typeNameTable[12] = "NavPaneApp1.Views.CompanyAdsPage";
+            _typeNameTable[13] = "NavPaneApp1.Views.SettingsPage";
 
             _typeTable = new global::System.Type[14];
-            _typeTable[0] = typeof(global::SupStore.Controls.NavMenuListView);
+            _typeTable[0] = typeof(global::NavPaneApp1.Controls.NavMenuListView);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ListView);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[3] = typeof(global::SupStore.AppShell);
+            _typeTable[3] = typeof(global::NavPaneApp1.AppShell);
             _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.Frame);
             _typeTable[7] = typeof(global::Windows.Foundation.Rect);
-            _typeTable[8] = typeof(global::SupStore.Controls.PageHeader);
+            _typeTable[8] = typeof(global::NavPaneApp1.Controls.PageHeader);
             _typeTable[9] = typeof(global::Windows.UI.Xaml.UIElement);
-            _typeTable[10] = typeof(global::SupStore.Views.MapPage);
-            _typeTable[11] = typeof(global::SupStore.Views.GoodsListPage);
-            _typeTable[12] = typeof(global::SupStore.Views.CompanyAdsPage);
-            _typeTable[13] = typeof(global::SupStore.Views.SettingsPage);
+            _typeTable[10] = typeof(global::NavPaneApp1.Views.MapPage);
+            _typeTable[11] = typeof(global::NavPaneApp1.Views.GoodsListPage);
+            _typeTable[12] = typeof(global::NavPaneApp1.Views.CompanyAdsPage);
+            _typeTable[13] = typeof(global::NavPaneApp1.Views.SettingsPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -197,41 +197,41 @@ namespace SupStore.SupStore_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_NavMenuListView() { return new global::SupStore.Controls.NavMenuListView(); }
-        private object Activate_3_AppShell() { return new global::SupStore.AppShell(); }
-        private object Activate_8_PageHeader() { return new global::SupStore.Controls.PageHeader(); }
-        private object Activate_10_MapPage() { return new global::SupStore.Views.MapPage(); }
-        private object Activate_11_GoodsListPage() { return new global::SupStore.Views.GoodsListPage(); }
-        private object Activate_12_CompanyAdsPage() { return new global::SupStore.Views.CompanyAdsPage(); }
-        private object Activate_13_SettingsPage() { return new global::SupStore.Views.SettingsPage(); }
+        private object Activate_0_NavMenuListView() { return new global::NavPaneApp1.Controls.NavMenuListView(); }
+        private object Activate_3_AppShell() { return new global::NavPaneApp1.AppShell(); }
+        private object Activate_8_PageHeader() { return new global::NavPaneApp1.Controls.PageHeader(); }
+        private object Activate_10_MapPage() { return new global::NavPaneApp1.Views.MapPage(); }
+        private object Activate_11_GoodsListPage() { return new global::NavPaneApp1.Views.GoodsListPage(); }
+        private object Activate_12_CompanyAdsPage() { return new global::NavPaneApp1.Views.CompanyAdsPage(); }
+        private object Activate_13_SettingsPage() { return new global::NavPaneApp1.Views.SettingsPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::SupStore.SupStore_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::SupStore.SupStore_XamlTypeInfo.XamlUserType userType;
+            global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
             switch (typeIndex)
             {
 
-            case 0:   //  SupStore.Controls.NavMenuListView
-                userType = new global::SupStore.SupStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ListView"));
+            case 0:   //  NavPaneApp1.Controls.NavMenuListView
+                userType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ListView"));
                 userType.Activator = Activate_0_NavMenuListView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 1:   //  Windows.UI.Xaml.Controls.ListView
-                xamlType = new global::SupStore.SupStore_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 2:   //  Windows.UI.Xaml.Controls.ItemsControl
-                xamlType = new global::SupStore.SupStore_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  SupStore.AppShell
-                userType = new global::SupStore.SupStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+            case 3:   //  NavPaneApp1.AppShell
+                userType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_3_AppShell;
                 userType.AddMemberName("AppFrame");
                 userType.AddMemberName("TogglePaneButtonRect");
@@ -240,23 +240,23 @@ namespace SupStore.SupStore_XamlTypeInfo
                 break;
 
             case 4:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::SupStore.SupStore_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 5:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::SupStore.SupStore_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 6:   //  Windows.UI.Xaml.Controls.Frame
-                xamlType = new global::SupStore.SupStore_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 7:   //  Windows.Foundation.Rect
-                xamlType = new global::SupStore.SupStore_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  SupStore.Controls.PageHeader
-                userType = new global::SupStore.SupStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+            case 8:   //  NavPaneApp1.Controls.PageHeader
+                userType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_8_PageHeader;
                 userType.AddMemberName("HeaderContent");
                 userType.SetIsLocalType();
@@ -264,32 +264,32 @@ namespace SupStore.SupStore_XamlTypeInfo
                 break;
 
             case 9:   //  Windows.UI.Xaml.UIElement
-                xamlType = new global::SupStore.SupStore_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  SupStore.Views.MapPage
-                userType = new global::SupStore.SupStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+            case 10:   //  NavPaneApp1.Views.MapPage
+                userType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_10_MapPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  SupStore.Views.GoodsListPage
-                userType = new global::SupStore.SupStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+            case 11:   //  NavPaneApp1.Views.GoodsListPage
+                userType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_11_GoodsListPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  SupStore.Views.CompanyAdsPage
-                userType = new global::SupStore.SupStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+            case 12:   //  NavPaneApp1.Views.CompanyAdsPage
+                userType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_12_CompanyAdsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  SupStore.Views.SettingsPage
-                userType = new global::SupStore.SupStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+            case 13:   //  NavPaneApp1.Views.SettingsPage
+                userType = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_13_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -301,47 +301,47 @@ namespace SupStore.SupStore_XamlTypeInfo
 
         private object get_0_AppShell_AppFrame(object instance)
         {
-            var that = (global::SupStore.AppShell)instance;
+            var that = (global::NavPaneApp1.AppShell)instance;
             return that.AppFrame;
         }
         private object get_1_AppShell_TogglePaneButtonRect(object instance)
         {
-            var that = (global::SupStore.AppShell)instance;
+            var that = (global::NavPaneApp1.AppShell)instance;
             return that.TogglePaneButtonRect;
         }
         private object get_2_PageHeader_HeaderContent(object instance)
         {
-            var that = (global::SupStore.Controls.PageHeader)instance;
+            var that = (global::NavPaneApp1.Controls.PageHeader)instance;
             return that.HeaderContent;
         }
         private void set_2_PageHeader_HeaderContent(object instance, object Value)
         {
-            var that = (global::SupStore.Controls.PageHeader)instance;
+            var that = (global::NavPaneApp1.Controls.PageHeader)instance;
             that.HeaderContent = (global::Windows.UI.Xaml.UIElement)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::SupStore.SupStore_XamlTypeInfo.XamlMember xamlMember = null;
-            global::SupStore.SupStore_XamlTypeInfo.XamlUserType userType;
+            global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlMember xamlMember = null;
+            global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType userType;
 
             switch (longMemberName)
             {
-            case "SupStore.AppShell.AppFrame":
-                userType = (global::SupStore.SupStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SupStore.AppShell");
-                xamlMember = new global::SupStore.SupStore_XamlTypeInfo.XamlMember(this, "AppFrame", "Windows.UI.Xaml.Controls.Frame");
+            case "NavPaneApp1.AppShell.AppFrame":
+                userType = (global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NavPaneApp1.AppShell");
+                xamlMember = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlMember(this, "AppFrame", "Windows.UI.Xaml.Controls.Frame");
                 xamlMember.Getter = get_0_AppShell_AppFrame;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SupStore.AppShell.TogglePaneButtonRect":
-                userType = (global::SupStore.SupStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SupStore.AppShell");
-                xamlMember = new global::SupStore.SupStore_XamlTypeInfo.XamlMember(this, "TogglePaneButtonRect", "Windows.Foundation.Rect");
+            case "NavPaneApp1.AppShell.TogglePaneButtonRect":
+                userType = (global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NavPaneApp1.AppShell");
+                xamlMember = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlMember(this, "TogglePaneButtonRect", "Windows.Foundation.Rect");
                 xamlMember.Getter = get_1_AppShell_TogglePaneButtonRect;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "SupStore.Controls.PageHeader.HeaderContent":
-                userType = (global::SupStore.SupStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SupStore.Controls.PageHeader");
-                xamlMember = new global::SupStore.SupStore_XamlTypeInfo.XamlMember(this, "HeaderContent", "Windows.UI.Xaml.UIElement");
+            case "NavPaneApp1.Controls.PageHeader.HeaderContent":
+                userType = (global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NavPaneApp1.Controls.PageHeader");
+                xamlMember = new global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlMember(this, "HeaderContent", "Windows.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_2_PageHeader_HeaderContent;
                 xamlMember.Setter = set_2_PageHeader_HeaderContent;
@@ -400,9 +400,9 @@ namespace SupStore.SupStore_XamlTypeInfo
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::SupStore.SupStore_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlSystemBaseType
     {
-        global::SupStore.SupStore_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -416,7 +416,7 @@ namespace SupStore.SupStore_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::SupStore.SupStore_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -608,7 +608,7 @@ namespace SupStore.SupStore_XamlTypeInfo
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::SupStore.SupStore_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -617,7 +617,7 @@ namespace SupStore.SupStore_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::SupStore.SupStore_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::NavPaneApp1.NavPaneApp1_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

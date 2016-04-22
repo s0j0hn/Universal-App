@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavPaneApp1", "NavPaneApp1\NavPaneApp1.csproj", "{EC7A83FB-6970-495A-BECC-060B1D8C1530}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupStore", "NavPaneApp1\SupStore.csproj", "{EC7A83FB-6970-495A-BECC-060B1D8C1530}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+﻿using Windows.Foundation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
-namespace NavPaneApp1.Controls
+namespace SupStore.Controls
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -26,12 +15,12 @@ namespace NavPaneApp1.Controls
 
             this.Loaded += (s, a) =>
             {
-                AppShell.Current.TogglePaneButtonRectChanged += Current_TogglePaneButtonSizeChanged;
-                this.titleBar.Margin = new Thickness(AppShell.Current.TogglePaneButtonRect.Right, 0, 0, 0);
+                SupStore.AppShell.Current.TogglePaneButtonRectChanged += Current_TogglePaneButtonSizeChanged;
+                this.titleBar.Margin = new Thickness(SupStore.AppShell.Current.TogglePaneButtonRect.Right, 0, 0, 0);
             };
         }
 
-        private void Current_TogglePaneButtonSizeChanged(AppShell sender, Rect e)
+        private void Current_TogglePaneButtonSizeChanged(SupStore.AppShell sender, Rect e)
         {
             this.titleBar.Margin = new Thickness(e.Right, 0, 0, 0);
         }
