@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="SupStore.Views.GoodsListPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SupStore.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+
+    <Grid x:ConnectionId='1' x:Name="LayoutRoot" Margin="0,0,10,0" >
+        <ListView x:ConnectionId='2' x:Name="listgoods" Margin="0,110,0,0">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Border Style="{ThemeResource ItemBorder}" Grid.Column="0" >
+                            <TextBlock  Text="{Binding id}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}"  Grid.Column="1" >
+                            <TextBlock Text="{Binding name}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}"  Grid.Column="2" >
+                            <TextBlock Text="{Binding description}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}" Grid.Column="3" >
+                            <TextBlock Text="{Binding quantity}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}" Grid.Column="4" >
+                            <TextBlock Text="{Binding location}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}" Grid.Column="5" >
+                            <TextBlock Text="{Binding storeprice}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}" Grid.Column="6" >
+                            <TextBlock Text="{Binding globalprice}" />
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="0">
+                                <TextBlock>Identificant</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="1">
+                                <TextBlock>Name</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="2">
+                                <TextBlock>Description</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="3">
+                                <TextBlock>Quantity</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="4">
+                                <TextBlock>Location</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="5">
+                                <TextBlock>Store Price</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="6">
+                                <TextBlock>Global Price</TextBlock>
+                            </Border>
+                        </Grid>
+
+                        <!-- Our ListView's Regular Rows. -->
+                        <ItemsPresenter Grid.Row="1"></ItemsPresenter>
+                    </Grid>
+                </ControlTemplate>
+            </ListView.Template>
+        </ListView>
+        <Button x:ConnectionId='3' x:Name="loadfile_button" Content="Load XML list" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="64" Width="185"                              />
+    </Grid>
+
+</Page>
+

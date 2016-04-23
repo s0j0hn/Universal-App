@@ -13,7 +13,7 @@ namespace SupStore
         public string description { get; set; }
         public string quantity { get; set; }
         public string location { get; set; }
-        public float store_price { get; set; }
-        public float global_price { get; set; }
+        public string storeprice { get; set; }
+        public string globalprice { get; set; }
     }
 }

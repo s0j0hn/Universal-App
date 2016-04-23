@@ -16,18 +16,18 @@ C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\XamlTypeInfo
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\App.xaml
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\AppShell.xaml
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Controls\PageHeader.xaml
-C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Styles\Styles.xaml
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Views\MapPage.xaml
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Views\GoodsListPage.xaml
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Views\CompanyAdsPage.xaml
+C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Styles\Styles.xaml
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Views\SettingsPage.xaml
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\App.xbf
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\AppShell.xbf
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Controls\PageHeader.xbf
-C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Styles\Styles.xbf
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Views\MapPage.xbf
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Views\GoodsListPage.xbf
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Views\CompanyAdsPage.xbf
+C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Styles\Styles.xbf
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\Views\SettingsPage.xbf
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\XamlSaveStateFile.xml
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\bin\x64\Debug\App.xbf
@@ -44,7 +44,6 @@ C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\bin\x64\Debug\SupStore.pdb
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\bin\x64\Debug\resources.pri
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\bin\x64\Debug\AppxManifest.xml
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\bin\x64\Debug\Core\AppxManifest.xml
-C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\bin\x64\Debug\Core\NavPaneApp1.exe
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\bin\x64\Debug\Core\SupStore.exe
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\bin\x64\Debug\SupStore.build.appxrecipe
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\bin\x64\Debug\Microsoft.CSharp.dll
@@ -220,3 +219,4 @@ C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\MultipleQual
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\resources.en-us.resfiles
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\resources.en-us.resfiles.intermediate
 C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\ProjectArchitectures.txt
+C:\Users\jan\Documents\3net-universal-app\NavPaneApp1\obj\x64\Debug\SupStore.csprojResolveAssemblyReference.cache

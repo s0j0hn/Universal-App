@@ -150,6 +150,15 @@
         <Setter Property="MinWidth" Value="{StaticResource SplitViewCompactPaneThemeLength}"/>
         <Setter Property="Height" Value="48"/>
         <Setter Property="Padding" Value="0"/>
+        
+    </Style>
+
+
+    <Style x:Name="ItemBorder" TargetType="Border">
+        <Setter Property="BorderBrush" Value="Gray" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Background" Value="White" />
+        
     </Style>
 
 </ResourceDictionary>

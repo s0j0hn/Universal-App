@@ -14,6 +14,7 @@ namespace SupStore.Views
     public sealed partial class MapPage : Page
     {
         RandomAccessStreamReference mapIconStreamReference;
+        // the default parameter
         Geopoint CAEN_LOCATION = new Geopoint(new BasicGeoposition() { Latitude = 49.201537, Longitude = -0.392917 });
         Geopoint ROUEN_LOCATION = new Geopoint(new BasicGeoposition() { Latitude = 49.412842, Longitude = 1.069670 });
         Geopoint HAVRE_LOCATION = new Geopoint(new BasicGeoposition() { Latitude = 49.493155, Longitude = 0.112374 });
@@ -24,13 +25,27 @@ namespace SupStore.Views
         public MapPage()
         {
             this.InitializeComponent();
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            localSettings.Values["Shop1_title"] = CAEN_TITLE;
+            localSettings.Values["Shop1_latitude"] = CAEN_LOCATION.Position.Latitude;
+            localSettings.Values["Shop1_longitude"] = CAEN_LOCATION.Position.Longitude;
+
+            localSettings.Values["Shop2_title"] = ROUEN_TITLE;
+            localSettings.Values["Shop2_latitude"] = ROUEN_LOCATION.Position.Latitude;
+            localSettings.Values["Shop2_longitude"] = ROUEN_LOCATION.Position.Longitude;
+
+            localSettings.Values["Shop3_title"] = HAVRE_TITLE;
+            localSettings.Values["Shop3_latitude"] = HAVRE_LOCATION.Position.Latitude;
+            localSettings.Values["Shop3_longitude"] = HAVRE_LOCATION.Position.Longitude;
             companyMap.Loaded += CompanyMap_Loaded;
             //Marker image
             mapIconStreamReference = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/MapPin.png"));
+            
         }
 
         public void CompanyMap_Loaded(object sender, RoutedEventArgs e)
         {
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
             companyMap.Center = new Geopoint(new BasicGeoposition()
             {
                 Latitude = 49.201537,
@@ -38,24 +53,28 @@ namespace SupStore.Views
             });
             companyMap.ZoomLevel = 9;
             //Position of all shops
+            Geopoint CAEN = new Geopoint(new BasicGeoposition() { Latitude = (double) localSettings.Values["Shop1_latitude"], Longitude = (double)localSettings.Values["Shop1_longitude"] });
+            Geopoint ROUEN = new Geopoint(new BasicGeoposition() { Latitude = (double)localSettings.Values["Shop2_latitude"], Longitude = (double)localSettings.Values["Shop2_longitude"] });
+            Geopoint HAVRE = new Geopoint(new BasicGeoposition() { Latitude = (double)localSettings.Values["Shop3_latitude"], Longitude = (double)localSettings.Values["Shop3_longitude"] });
+
             MapIcon shop1 = new MapIcon();
-            shop1.Location = CAEN_LOCATION;
+            shop1.Location = CAEN; 
             shop1.NormalizedAnchorPoint = new Point(0.5, 1.0);
-            shop1.Title = CAEN_TITLE;
+            shop1.Title = (string) localSettings.Values["Shop1_title"];
             shop1.Image = mapIconStreamReference;
             companyMap.MapElements.Add(shop1);
 
             MapIcon shop2 = new MapIcon();
-            shop2.Location = ROUEN_LOCATION;
+            shop2.Location = ROUEN;
             shop2.NormalizedAnchorPoint = new Point(0.5, 1.0);
-            shop2.Title = ROUEN_TITLE;
+            shop2.Title = (string)localSettings.Values["Shop2_title"]; ;
             shop2.Image = mapIconStreamReference;
             companyMap.MapElements.Add(shop2);
 
             MapIcon shop3 = new MapIcon();
-            shop3.Location = HAVRE_LOCATION;
+            shop3.Location = HAVRE;
             shop3.NormalizedAnchorPoint = new Point(0.5, 1.0);
-            shop3.Title = HAVRE_TITLE;
+            shop3.Title = (string)localSettings.Values["Shop3_title"]; ;
             shop3.Image = mapIconStreamReference;
             companyMap.MapElements.Add(shop3);
 

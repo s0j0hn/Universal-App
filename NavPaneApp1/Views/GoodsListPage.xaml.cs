@@ -14,6 +14,7 @@ namespace SupStore.Views
     /// </summary>
     public sealed partial class GoodsListPage : Page
     {
+        private string XMLFileLocation = "DataGoods.xml";
         ObservableCollection<Good> obs_goods = new ObservableCollection<Good>();
         public GoodsListPage()
         {
@@ -23,17 +24,25 @@ namespace SupStore.Views
 
         public void Goods_Loaded(object sender, RoutedEventArgs e)
         {
-            XDocument goodsxmldoc = XDocument.Load("DataGoods.xml");
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            localSettings.Values["XML_LOCATION"] = XMLFileLocation;
+            XDocument goodsxmldoc = XDocument.Load(XMLFileLocation);
             foreach (var i in goodsxmldoc.Root.Descendants("dataModule"))
             {
 
                 obs_goods.Add(new Good
                 {
                     id = Convert.ToInt32(i.Element("id").Value),name = i.Element("name").Value,description = i.Element("description").Value,
-                    quantity = i.Element("quantity").Value,location = i.Element("location").Value
+                    quantity = i.Element("quantity").Value,location = i.Element("location").Value, storeprice = i.Element("storeprice").Value,
+                    globalprice = i.Element("globalprice").Value
                 });
             }
             listgoods.ItemsSource = obs_goods;
+        }
+
+        private void loadfile_button_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

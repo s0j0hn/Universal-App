@@ -6,31 +6,99 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid x:Name="LayoutRoot">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <ListView x:Name="listgoods" Height="1060" Width="1900" 
-                VerticalAlignment="Top"
-                HorizontalAlignment="Left"
-                Grid.Row="1"
-                Background="{StaticResource ApplicationPageBackgroundThemeBrush}" 
-                
-                ShowsScrollingPlaceholders="False" 
-                BorderBrush="LightGray" BorderThickness="1" SelectionMode="None">
+
+
+
+    <Grid x:Name="LayoutRoot" Margin="0,0,10,0" >
+        <ListView x:Name="listgoods" Margin="0,110,0,0">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding id}"></TextBlock>
-                        <TextBlock Text="{Binding name}"></TextBlock>
-                        <TextBlock Text="{Binding description}"></TextBlock>
-                        <TextBlock Text="{Binding quantity}"></TextBlock>
-                        <TextBlock Text="{Binding location}"></TextBlock>
-                    </StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Border Style="{ThemeResource ItemBorder}" Grid.Column="0" >
+                            <TextBlock  Text="{Binding id}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}"  Grid.Column="1" >
+                            <TextBlock Text="{Binding name}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}"  Grid.Column="2" >
+                            <TextBlock Text="{Binding description}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}" Grid.Column="3" >
+                            <TextBlock Text="{Binding quantity}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}" Grid.Column="4" >
+                            <TextBlock Text="{Binding location}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}" Grid.Column="5" >
+                            <TextBlock Text="{Binding storeprice}" />
+                        </Border>
+                        <Border Style="{ThemeResource ItemBorder}" Grid.Column="6" >
+                            <TextBlock Text="{Binding globalprice}" />
+                        </Border>
+                    </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
+            <ListView.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="0">
+                                <TextBlock>Identificant</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="1">
+                                <TextBlock>Name</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="2">
+                                <TextBlock>Description</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="3">
+                                <TextBlock>Quantity</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="4">
+                                <TextBlock>Location</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="5">
+                                <TextBlock>Store Price</TextBlock>
+                            </Border>
+                            <Border Style="{ThemeResource ItemBorder}" Grid.Column="6">
+                                <TextBlock>Global Price</TextBlock>
+                            </Border>
+                        </Grid>
+
+                        <!-- Our ListView's Regular Rows. -->
+                        <ItemsPresenter Grid.Row="1"></ItemsPresenter>
+                    </Grid>
+                </ControlTemplate>
+            </ListView.Template>
         </ListView>
+        <Button x:Name="loadfile_button" Content="Load XML list" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="64" Width="185" Click="loadfile_button_Click"/>
     </Grid>
 
 </Page>
