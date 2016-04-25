@@ -66,14 +66,13 @@
       <RootProperty Name="CharacterSpacing" />
       <RootProperty Name="Style" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Inlines" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Inlines" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="RenderTransformOrigin" />
-      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
@@ -260,7 +259,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
     </RootType>

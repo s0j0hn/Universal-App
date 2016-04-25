@@ -99,6 +99,7 @@
             </ListView.Template>
         </ListView>
         <Button x:ConnectionId='3' x:Name="loadfile_button" Content="Load XML list" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="64" Width="185"                              />
+        <TextBlock x:ConnectionId='4' x:Name="infoFile" HorizontalAlignment="Left" Margin="246,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
     </Grid>
 
 </Page>

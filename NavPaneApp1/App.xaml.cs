@@ -1,6 +1,7 @@
 ﻿using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Navigation;
 using SupStore;
@@ -35,7 +36,7 @@ namespace SupStore
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
-
+            
             AppShell shell = Window.Current.Content as AppShell;
 
             // Do not repeat app initialization when the Window already has content,

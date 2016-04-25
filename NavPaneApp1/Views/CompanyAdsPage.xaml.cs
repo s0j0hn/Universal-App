@@ -16,12 +16,22 @@ namespace SupStore.Views
             advideo.Loaded += Advideo_Loaded;
         }
 
+        public static bool CheckUrl(string u)
+        {
+            Uri uriResult;
+            return Uri.TryCreate(u, UriKind.Absolute, out uriResult);
+        }
+
         public void Advideo_Loaded(object sender, RoutedEventArgs e)
         {
             var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            Uri link = new Uri((string) localSettings.Values["AdLink"]);
+            String url = (string) localSettings.Values["AdLink"];
+            if (CheckUrl(url))
+            {
+                Uri link = new Uri((string)localSettings.Values["AdLink"]);
+                advideo.Source = link;
+            }
             
-            advideo.Source = link;
         }
     }
 }

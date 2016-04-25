@@ -9,28 +9,30 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
           EntranceNavigationTransitionInfo.IsTargetElement="True">
-        <TextBox x:Name="textBox_adlink" HorizontalAlignment="Left" Margin="236,73,0,0" TextWrapping="Wrap" Text="http://" VerticalAlignment="Top" Width="933"/>
+        <TextBox x:Name="textBox_adlink" HorizontalAlignment="Left" Margin="236,73,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="933"/>
         <TextBlock x:Name="label_adlink" HorizontalAlignment="Left" Margin="53,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178">
         	<Run Text="Change your "/>
         	<Run Text="ad link here : "/>
         </TextBlock>
         <Button x:Name="button_adlink_save" Content="Save" HorizontalAlignment="Left" Margin="53,116,0,0" VerticalAlignment="Top" Click="button_adlink_save_Click"/>
-        <TextBlock x:Name="actuallink_text" HorizontalAlignment="Left" Margin="236,122,0,0" TextWrapping="Wrap" Text="Actual link ad :" VerticalAlignment="Top" Width="933" SelectionChanged="textBlock_SelectionChanged"/>
+        <TextBlock x:Name="actuallink_text" HorizontalAlignment="Left" Margin="236,122,0,0" TextWrapping="Wrap" Text="Actual link ad :" VerticalAlignment="Top" Width="933" />
         <TextBlock x:Name="shops_title" HorizontalAlignment="Left" Margin="53,190,0,0" TextWrapping="Wrap" Text="Change your Shops location" VerticalAlignment="Top" Width="445" Height="31" FontSize="22"/>
-        <TextBlock x:Name="label_shop_name" HorizontalAlignment="Left" Margin="53,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" SelectionChanged="textBlock_SelectionChanged" Height="20" RenderTransformOrigin="0.492,0.4">
+        <TextBlock x:Name="label_shop_name" HorizontalAlignment="Left" Margin="53,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"  Height="20" RenderTransformOrigin="0.492,0.4">
         	<Run Text="Name"/>
         	<Run Text=" : "/>
         </TextBlock>
-        <TextBox x:Name="textBox_shop_name" HorizontalAlignment="Left" Margin="123,286,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="textBox_shop_name" HorizontalAlignment="Left" Margin="123,286,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
         <ComboBox x:Name="comboBox_shops" HorizontalAlignment="Left" Margin="123,236,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox_shops_SelectionChanged"/>
-        <TextBlock x:Name="textbox_shop" HorizontalAlignment="Left" Margin="53,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" SelectionChanged="textBlock_SelectionChanged" Height="20" RenderTransformOrigin="0.492,0.4" Text="Shop :"/>
-        <TextBlock x:Name="label_shop_longitute" HorizontalAlignment="Left" Margin="53,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" SelectionChanged="textBlock_SelectionChanged" Height="20" RenderTransformOrigin="0.492,0.4">
+        <TextBlock x:Name="textbox_shop" HorizontalAlignment="Left" Margin="53,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"  Height="20" RenderTransformOrigin="0.492,0.4" Text="Shop :"/>
+        <TextBlock x:Name="label_shop_longitute" HorizontalAlignment="Left" Margin="53,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"  Height="20" RenderTransformOrigin="0.492,0.4">
         	<Run Text="Longitude"/>
         	<Run Text=" "/>
         	<Run Text=":"/>
         </TextBlock>
-        <TextBox x:Name="textBox_shop_longitude" HorizontalAlignment="Left" Margin="133,334,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Width="160"/>
-        <TextBlock x:Name="label_shop_latitude" HorizontalAlignment="Left" Margin="53,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" SelectionChanged="textBlock_SelectionChanged" Height="20" RenderTransformOrigin="0.492,0.4" Text="Latitude :"/>
-        <TextBox x:Name="textBox_shop_latitude" HorizontalAlignment="Left" Margin="118,385,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="textBox_shop_longitude" HorizontalAlignment="Left" Margin="133,334,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+        <TextBlock x:Name="label_shop_latitude" HorizontalAlignment="Left" Margin="53,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"  Height="20" RenderTransformOrigin="0.492,0.4" Text="Latitude :"/>
+        <TextBox x:Name="textBox_shop_latitude" HorizontalAlignment="Left" Margin="118,385,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+        <Button x:Name="button_shop_save" Content="Save" HorizontalAlignment="Left" Margin="53,420,0,0" VerticalAlignment="Top" Click="button_shop_save_Click"/>
+        <Button x:Name="reset_settings" Content="Reset Settings" HorizontalAlignment="Left" Margin="53,450,0,0" VerticalAlignment="Top" Click="button_reset_settings"/>
     </Grid>
 </Page>
